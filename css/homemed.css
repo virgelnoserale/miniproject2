@@ -1,0 +1,53 @@
+body{
+background-color: whitesmoke;
+color: white;
+}
+
+#container-logo-nav{    
+    background-color: rgb(255, 255, 137);
+}
+
+#container-logo-nav img{
+    /*company-logo*/  
+    width: 100px;
+    height:100px;
+}
+#container-advertise{
+
+} 
+
+#container-advertise #carouselExampleInterval{
+    width: 100%;
+}
+
+#container-products{   
+}
+
+#container-products h2{
+    color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+#container-products .img-products{
+    color: black;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+#container-products p{
+    color: black;
+    text-align: center;
+}
+
+#container-footer{
+    background-color: rgb(255, 255, 137);
+}
+
+#container-footer p{
+    color: green;
+    text-align: center;
+}
