@@ -9,8 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4b6fba0227.js" crossorigin="anonymous"></script>
     <script src="./js/slide-product-nutre.js"></script>
+    <script src="./js/payment.js"></script>
     <link rel="stylesheet" href="./css/homemed.css">
     <link rel="stylesheet" href="./css/productdetails.css">
+    <link rel="stylesheet" href="./css/checkout.css">
     
 </head>
 <body>
@@ -51,7 +53,7 @@
         </div>
     </div>
     
-    <!--products details to buy-->
+    <!--products details to checkout-->
     <div class="container" id="container-products-details">
         <div class="row">
             <div class="col-md-5">
@@ -60,40 +62,84 @@
             <div class="col-md-7">
               <h4>NutriCleanse Herbal Capsule 500mg (60 Caps)</h4>
               <br>
-              <h3>P 300.00</h3>
+              <table border="0">
+                <thead>
+                    <th>Quantity</th>
+                    <th>Item Price</th>
+                    <th>Sub Total</th>
+                </thead>
+                    <tr>
+                      <td height="20px"></td>
+                    </tr>
+                    <tr>
+                        <td><span><input type="number" class="enter-num" oninput="totalPrice(this.value)" onchange="totalPrice(this.value)" min="0" required ></span></td>
+                        <td><span>P 300</span></td>
+                        <td><span>P </span><span id="sub-result">00</span></td>
+                    </tr>
+                    <tr>
+                        <td>Delivery fee :</td>
+                        <td></td>
+                        <td>P 85</td>
+                    </tr>
+                    <tr >
+                        <td height = '30px'></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total Price :</b></td>
+                        <td></td>
+                        <td><b><span>P </span><span id="total-result">00</span></b></td>
+                    </tr>
+                </tbody>
+            </table>
               <br>
-              <h6>Product Specification</h6>
-              <section>Wellbeing Supplement:<Span> Multivitamin & Minerals</Span></section>
-              <section>Weight:<Span> 300g</Span></section>
-              <section>Pack Type:<Span> Value Size</Span></section>
-              <section>Gender:<Span> Unisex</Span></section>
-              <section>Consumables Form:<Span> Capsules</Span></section>
-              <section>Expiry Date:<Span> 06/21/2024</Span></section>
-              <br>
-              <h6>Product Discription</h6>
-              <p>Helps with occasional constipation and gentle internal cleansing.<br>
-                <br>
-                Helps with the elimination of toxins in the colon. <br>
-                <br>
-                <u>Contains</u> : Senna Leaf Powder – A natural stimulant that encourages peristalsis. May encourage contractions and help the digestive system eliminate waste effectively.
-                <br>
-                <u>Contains</u> : Psyllium Husk Powder – A soluble fiber, derived from the husks or coverings of the psyllium seeds. It is an ancient and trusted soluble fiber that is very effective in moving waste smoothly and gently through the digestive tract.
-                <br>
-                <u>Contains</u> : Fennel Seed – Used for various digestive problems including intestinal gas, bloating and loss of appetite.
-              </p>
-              <br>
+              <h6>Personal Information|Where we send your Items.</h6>
+              <form class="row g-3">
+                <div class="col-md-12">
+                  <label for="validationDefault01" class="form-label">Fullname</label>
+                  <input type="text" class="form-control" id="validationDefault01">
+                </div>
+                <div class="col-md-12">
+                  <label for="validationDefault02" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="validationDefault02">
+                </div>
+                <div class="col-md-8">
+                  <label for="validationDefault03" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="validationDefault03">
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault05" class="form-label">Mobile No.</label>
+                  <input type="text" class="form-control" id="validationDefault05" maxlength="11">
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault04" class="form-label">Mode of Payment</label>
+                  <select class="form-select" id="validationDefault04">
+                    <option selected disabled value="">Choose...</option>
+                    <option>COD - Cash on Delivery</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+                    <label class="form-check-label" for="invalidCheck2">
+                      Agree to terms and conditions.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <a href="./thank_you_123343.html"><button class="btn btn-primary" type="submit">Submit form</button></a>
+              </form>
             </div>
-        </div>
+          </div>
     </div>
     <div class="container" id="container-testi-button">
       <div class="row">
         <div class="col-md-8"></div>
         <div class="col-md-4">
-          <a href="#"><button type="button" class="btn btn-primary">Buy now</button></a>
+          
         </div>
       </div>
     </div>
-
+    <br>
     <br>
 
     <!--footer-->

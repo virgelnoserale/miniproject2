@@ -1,12 +1,11 @@
 #container-products-details{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 50px;
-    
 }
 
 #container-products-details h6, h4{
     font-weight: bold;
-    color: black;
+    color: rgb(73, 8, 8);
 }
 
 #container-products-details h3{
