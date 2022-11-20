@@ -48,17 +48,21 @@ color: white;
 }
 
 #container-products .card-img-top:hover{
-    /*img-products*/transform: scale(1.1);
+    /*img-products*/
+    transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
 
-
 #container-products p{
     color: black;
     text-align: center;
+}
+
+#container-products .card-body{
+    background-color: rgb(192, 192, 221);
 }
 
 #container-footer{

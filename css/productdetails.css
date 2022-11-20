@@ -1,0 +1,47 @@
+#container-products-details{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    
+}
+
+#container-products-details h6, h4{
+    font-weight: bold;
+    color: black;
+}
+
+#container-products-details h3{
+    font-weight: bolder;
+    color: orange;
+}
+
+#container-products-details img{
+    width: 100%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+#container-products-details section{
+    font-size: small;
+    color: gray;
+}
+#container-products-details span{
+    font-size: small;
+    color: black;
+}
+
+#container-products-details p{
+    font-size: small;
+    color: rgb(48, 10, 10);
+}
+
+#container-testi-button{
+    margin-top: 5px;
+}
+
+#container-testi-button button{
+    display: block;
+    margin-left: auto;
+}
