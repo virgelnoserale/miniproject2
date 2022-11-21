@@ -62,7 +62,7 @@
             <div class="col-md-7">
               <h4>NutriCleanse Herbal Capsule 500mg (60 Caps)</h4>
               <br>
-              <table border="0">
+              <table>
                 <thead>
                     <th>Quantity</th>
                     <th>Item Price</th>
@@ -72,7 +72,7 @@
                       <td height="20px"></td>
                     </tr>
                     <tr>
-                        <td><span><input type="number" class="enter-num" oninput="totalPrice(this.value)" onchange="totalPrice(this.value)" min="0" required ></span></td>
+                        <td><span><input type="number" class="enter-num" oninput="totalPrice(this.value)" onchange="totalPrice(this.value)" min="1" value="0" required ></span></td>
                         <td><span>P 300</span></td>
                         <td><span>P </span><span id="sub-result">00</span></td>
                     </tr>
@@ -93,10 +93,11 @@
             </table>
               <br>
               <h6>Personal Information|Where we send your Items.</h6>
-              <form class="row g-3">
+            
+              <form class="row g-3" method="get" action="./thank_you_123343.html">
                 <div class="col-md-12">
                   <label for="validationDefault01" class="form-label">Fullname</label>
-                  <input type="text" class="form-control" id="validationDefault01">
+                  <input type="text" class="form-control" id="validationDefault01" maxlength="50" required>
                 </div>
                 <div class="col-md-12">
                   <label for="validationDefault02" class="form-label">Address</label>
@@ -104,11 +105,11 @@
                 </div>
                 <div class="col-md-8">
                   <label for="validationDefault03" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="validationDefault03">
+                  <input type="email" class="form-control" id="validationDefault03" required>
                 </div>
                 <div class="col-md-4">
                   <label for="validationDefault05" class="form-label">Mobile No.</label>
-                  <input type="text" class="form-control" id="validationDefault05" maxlength="11">
+                  <input type="text" class="form-control" id="validationDefault05" maxlength="11" required>
                 </div>
                 <div class="col-md-3">
                   <label for="validationDefault04" class="form-label">Mode of Payment</label>
@@ -120,13 +121,14 @@
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
-                    <label class="form-check-label" for="invalidCheck2">
+                    <label class="form-check-label" for="invalidCheck2" >
                       Agree to terms and conditions.
                     </label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <a href="./thank_you_123343.html"><button class="btn btn-primary" type="submit">Submit form</button></a>
+                 <button class="btn btn-primary" type="submit">Checkout</button>
+                </div>
               </form>
             </div>
           </div>
@@ -141,7 +143,7 @@
     </div>
     <br>
     <br>
-
+    </div>
     <!--footer-->
     <div class="container-fluid" id="container-footer">
         <div class="row">
