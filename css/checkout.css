@@ -17,8 +17,14 @@
     font-size: small;
 }
 
-/*#container-products-details button{
+#container-products-details button{
     display: block;
     margin-left: auto;
 }
-*/
+#container-products-details form option{
+    font-size: small;
+}
+#container-products-details form .form-control{
+    background: rgb(205, 236, 235);
+    font-size: small;
+}
