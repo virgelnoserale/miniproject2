@@ -1,0 +1,101 @@
+body {
+    /* background-image: url(../assets/img/bg1.png);
+    background-size: cover; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    /* font-family: 'Roboto Slab', serif; */
+}
+.custom-nav-item {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #232323;
+}
+h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 800;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+h4 {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+p {
+    font-size: 18px;
+}
+span{
+    font-size: 18px;
+}
+li {
+    list-style-type: none;
+}
+.custom-navbar {
+    background-color: #f8f5f2;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.hero {
+    color: #fffffe;
+    background-image: url(../img/landing/hero-bg.jpg);
+    height: 90vh;
+    text-shadow: 2px 2px 5px black;
+}
+.hero-content {
+    padding-top: 250px;
+}
+.testimonial-bg {
+    background-color: #feefe8;
+}
+
+.custom-footer {
+    background-color: #f8f5f2;
+}
+.respo-img {
+    height: 200px;
+    width: auto;
+}
+
+/* classes starts here */
+.normal-text{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+.titles{
+    font-weight: 600;
+}
+.big-text {
+    font-size: 32px;
+}
+.bigger-text {
+    font-size: 48px;
+}
+.footer-link {
+    color: black;
+    font-size: large;
+    padding: 0px;
+}
+.nav-tab {
+  padding: 20px;
+}
+.brand {
+    align-items: center;
+}
+
+.menu {
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
