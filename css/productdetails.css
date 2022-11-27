@@ -36,6 +36,11 @@
     color: rgb(48, 10, 10);
 }
 
+#container-products-details ul li{
+    font-size: small;
+    color: rgb(48, 10, 10);
+}
+
 #container-testi-button{
     margin-top: 5px;
 }
@@ -43,4 +48,8 @@
 #container-testi-button button{
     display: block;
     margin-left: auto;
+}
+
+#container-products-details #slide-product-details{
+    border: 1px rgb(206, 206, 206) solid;
 }

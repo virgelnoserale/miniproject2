@@ -13,9 +13,32 @@ color: white;
     width: 80px;
     height:80px;
 }
-#container-advertise{
+
+#container-logo-nav .nav-link{
+    font-size: 1.5rem;
+
 } 
 
+
+#container-advertise{
+    margin-top: 10px ;
+} 
+
+#container-advertise .carousel-inner{
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+} 
+
+/*#container-advertise .div-btn-shop {
+    position: relative;
+    padding: 10px;
+    padding: 10%;
+} 
+
+*/
 #container-products{   
 }
 
@@ -31,6 +54,10 @@ color: white;
     color: green;
     text-align: center;
     padding: 20px;
+}
+
+#container-products .card {
+    border:1px rgb(192, 192, 221) solid;   
 }
 
 #container-products .card-img-top{   /*img-products*/
@@ -59,6 +86,15 @@ color: white;
 #container-products p{
     color: black;
     text-align: center;
+}
+
+#container-products a, a:hover, a:visited{
+    text-decoration: none;
+}
+
+#container-products a:hover{
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #container-products .card-body{
