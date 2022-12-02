@@ -62,6 +62,9 @@ a {
     font-size: large;
     padding: 0px;
 }
+.footer-p {
+    color: black;
+}
 .nav-tab {
   padding: 20px;
 }
