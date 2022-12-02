@@ -16,6 +16,10 @@ a {
     color: #232323;
 }
 
+.testimonial-background {
+    background-color: #f99129;
+}
+
 .hero {
     color: #fffffe;
     background-image: url(../img/landing/hero-bg.jpg);
