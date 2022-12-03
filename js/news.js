@@ -47,7 +47,7 @@ const fetchHeadlines = async () => {
         const myJson = await response.json();
         newsDataArr = myJson.articles;
     } else {
-        // handle errors
+        // handle errors and some debugging
         console.log(response.status, response.statusText);
         newsdetails.innerHTML = "<h5>No data found.</h5>"
         return;
