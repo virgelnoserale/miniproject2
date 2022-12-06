@@ -1,6 +1,6 @@
 let x = 0;
 let photos= [];
-let interval = 7000;
+let interval = 5000;
 
 photos[0] = 'img/products/coffee/1.png';
 photos[1] = 'img/products/coffee/2.png';

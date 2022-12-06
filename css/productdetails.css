@@ -1,6 +1,34 @@
+#items-list{
+    border-right: 1px rgb(221, 221, 221) solid;
+    margin-top: 40px;
+}
+
+.heading{
+    color:rgb(73, 8, 8);
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+
+
+}
+.thumbnail img {
+    width: 95%;
+    height: 95%;
+    border-radius: 3%;
+
+}
+.paraBtn{
+    text-align: right;
+    color: white;
+}
+
+#container-href{
+    color: black;
+}
+
 #container-products-details{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #container-products-details h6, h4{

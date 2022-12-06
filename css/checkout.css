@@ -1,3 +1,30 @@
+#container-items-total{
+    margin-bottom: 0;
+}
+table thead tr{
+    background-color: rgb(159, 216, 213);
+    border: 1px whitesmoke solid;  
+}
+
+tbody {
+    background-color: rgb(255, 255, 255);
+    border: px whitesmoke solid;
+}
+
+td{
+    border-bottom: 1px rgb(159, 216, 213) dotted;
+}
+
+
+.panel-heading{
+    text-align: right;
+    color: black;
+}
+.panel-heading #alltotal{
+    color: red;
+    font-weight: bolder;
+}
+
 #container-products-details{
 }
 
@@ -28,3 +55,4 @@
     background: rgb(205, 236, 235);
     font-size: small;
 }
+
