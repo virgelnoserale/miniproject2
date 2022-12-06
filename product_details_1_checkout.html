@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virgel & Jhonas Inc.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b6fba0227.js" crossorigin="anonymous"></script>
+    <script src="./js/slide-product-nutri.js"></script>
+    <script src="./js/payment-nutri.js"></script>
+    <link rel="stylesheet" href="./css/homemed.css">
+    <link rel="stylesheet" href="./css/productdetails.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@400;600&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <!-- logo-nav of Virgel
+    <div class="container-fluid" id="container-logo-nav">
+        <div class="row">
+            <div class="col-md-3">
+              <a href="./homemed.html">  
+              <img src="./img/companylogo.png"></a>
+            </div>
+            <div class="col-md-9">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div> -->
+    <!-- navbar -->
+    <div class="container-fluid sticky-top footer-navbar-bg">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-expand-md ">
+                <div class="container-fluid ">
+                <a class="navbar-brand" href="index.html"><img src="./img/logo.png" height="60"alt="V&J Herbal"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <!-- <a class="active" aria-current="page" href="#"></a> -->
+                    <a class="inactive custom-nav-item" href="#">Home</a>
+                    <a class="inactive custom-nav-item" href="./news.html">News</a>
+                    <a class="inactive custom-nav-item" href="./homemed.html">Products</a>
+                    <a class="inactive custom-nav-item" href="./about.html">About</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!--products details to checkout-->
+    <div class="container" id="container-products-details">
+        <div class="row">
+            <div class="col-md-5">
+                <img id="slide-product-details">
+            </div>
+            <div class="col-md-7">
+              <h4>Green Herb Insulin Coffee for Diabetes Control Blood Sugar</h4>
+              <br>
+              <table>
+                <thead>
+                    <th>Quantity</th>
+                    <th>Item Price</th>
+                    <th>Sub Total</th>
+                </thead>
+                    <tr>
+                      <td height="20px"></td>
+                    </tr>
+                    <tr>
+                        <td><span><input type="number" class="enter-num" oninput="totalPrice(this.value)" onchange="totalPrice(this.value)" min="1" value="0" required ></span></td>
+                        <td><span>P 300</span></td>
+                        <td><span>P </span><span id="sub-result">00</span></td>
+                    </tr>
+                    <tr>
+                        <td>Delivery fee :</td>
+                        <td></td>
+                        <td>P 85</td>
+                    </tr>
+                    <tr >
+                        <td height = '30px'></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total Price :</b></td>
+                        <td></td>
+                        <td><b><span>P </span><span id="total-result">00</span></b></td>
+                    </tr>
+                </tbody>
+            </table>
+              <br>
+              <h6>Personal Information|Where we send your Items.</h6>
+            
+              <form class="row g-3" method="get" action="./thank_you_123343.html">
+                <div class="col-md-12">
+                  <label for="validationDefault01" class="form-label">Fullname</label>
+                  <input type="text" class="form-control" id="validationDefault01" maxlength="50" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationDefault02" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="validationDefault02">
+                </div>
+                <div class="col-md-8">
+                  <label for="validationDefault03" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault05" class="form-label">Mobile No.</label>
+                  <input type="text" class="form-control" id="validationDefault05" maxlength="11" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault04" class="form-label">Mode of Payment</label>
+                  <select class="form-select" id="validationDefault04">
+                    <option selected disabled value="">Choose...</option>
+                    <option>COD - Cash on Delivery</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+                    <label class="form-check-label" for="invalidCheck2" >
+                      Agree to terms and conditions.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                 <button class="btn btn-primary" type="submit">Checkout</button>
+                </div>
+              </form>
+            </div>
+          </div>
+    </div>
+    <div class="container" id="container-testi-button">
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+      </div>
+    </div>
+    </div>
+      <br>
+      <br>
+    </div>
+    <!-- footer of Virgel
+    <div class="container-fluid" id="container-footer">
+        <div class="row">
+            <div class="col">
+                <br>
+                <br>    
+                <p><small>Virgel and Jhonas Inc.</small></p>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div> -->
+    <!-- footer -->
+    <div class="container-fluid footer-navbar-bg">
+      <div class="container">
+        <div class="row pt-3 text-center">
+          <p class="footer-p">email: <b>hello@vjherbal.com</b></p>
+          <p><span><a class="icon footer-link" href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl "></i></a></span>
+            <span><a class="icon footer-link" href="#" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></span>
+            <span><a class="icon footer-link" href="#" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl"></i></a></span></p>
+        </div>
+
+        <div class="row text-center">
+
+              <span><a class="footer-link" href="https://www.termsfeed.com/live/14c1c4db-d31d-4b9e-a834-a94bbb1486c2" target="_blank">Privacy Policy</a>
+
+              <span> - </span>
+
+              <a class="footer-link" href="https://www.termsfeed.com/live/c9f378ae-20c3-4782-ac55-47e0dc2d8828" target="_blank">Disclaimer</a></span>
+
+        </div>
+
+        <div class="row text-center">
+            <p class="footer-p">VJ Herbal © 2022. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
