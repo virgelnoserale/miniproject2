@@ -1,18 +1,3 @@
-// var url = 'https://newsapi.org/v2/everything?' +
-//           'q=Apple&' +
-//           'from=2022-11-28&' +
-//           'sortBy=popularity&' +
-//           'apiKey=b302ca2135c146fbab12a2fe932ccc42';
-
-// var req = new Request(url);
-
-// fetch(req)
-//     .then(function(response) {
-//         console.log(response.json());
-//     })
-
-//accidentally sent out API request with results <100
-
 // Production Script Run Starts here
 // variables
 const healthBtn = document.getElementById("health");
@@ -26,7 +11,7 @@ var newsDataArr = [];
 
 // apis 
 const API_KEY = "b302ca2135c146fbab12a2fe932ccc42";
-const HEALTH_NEWS = "https://newsapi.org/v2/top-headlines?country=ph&category=health&apiKey=";
+const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=10&offset=20";
 const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
 
 window.onload = function() {
@@ -41,11 +26,11 @@ searchBtn.addEventListener("click",function(){
 });
 
 const fetchHeadlines = async () => {
-    const response = await fetch(HEALTH_NEWS+API_KEY);
+    const response = await fetch(HEALTH_NEWS);
     newsDataArr = [];
     if(response.status >=200 && response.status < 300) {
         const myJson = await response.json();
-        newsDataArr = myJson.articles;
+        newsDataArr = myJson.news;
     } else {
         // handle errors and some debugging
         console.log(response.status, response.statusText);
@@ -76,6 +61,7 @@ const fetchQueryNews = async () => {
     displayNews();
 }
 
+//this will now create and display contents in the HTML from the contents received from the API
 function displayNews() {
 
     newsdetails.innerHTML = "";
@@ -87,7 +73,7 @@ function displayNews() {
 
     newsDataArr.forEach(news => {
 
-        var date = news.publishedAt.split("T");
+        var date = news.publish_date.split("T");
         
         var col = document.createElement('div');
         col.className="col-sm-12 col-md-3 col-lg-3 p-2 card m-3";
@@ -98,7 +84,7 @@ function displayNews() {
         var image = document.createElement('img');
         image.setAttribute("height","matchparent");
         image.setAttribute("width","100%");
-        image.src=news.urlToImage;
+        image.src=news.image;
 
         var cardBody = document.createElement('div');
         
@@ -112,7 +98,7 @@ function displayNews() {
 
         var discription = document.createElement('p');
         discription.className="text-muted";
-        discription.innerHTML = news.description;
+        discription.innerHTML = news.summary;
 
         var link = document.createElement('a');
         link.className="btn btn-dark";
