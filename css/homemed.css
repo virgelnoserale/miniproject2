@@ -16,9 +16,7 @@ color: white;
 
 #container-logo-nav .nav-link{
     font-size: 1.5rem;
-
 } 
-
 
 #container-advertise{
     margin-top: 10px ;
@@ -84,7 +82,8 @@ color: white;
 }
 
 #container-products p{
-    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(87, 13, 13);
     text-align: center;
 }
 
@@ -98,7 +97,7 @@ color: white;
 }
 
 #container-products .card-body{
-    background-color: rgb(192, 192, 221);
+    background-color: white;
 }
 
 #container-footer{

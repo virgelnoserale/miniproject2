@@ -1,0 +1,65 @@
+.content-product-reviews-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(54, 19, 19);
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+}
+.input-review{
+    margin-bottom: 10px;
+    font-size: small;
+    width: 97%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-color: rgb(240, 240, 240);
+    border: 0;
+    background-color: antiquewhite;
+}
+
+::placeholder {
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(139, 136, 136);
+}
+
+.class-btn-add{
+    border:1px black solid;
+    color: rgb(161, 161, 161);
+    font-style: italic;
+    border: none;
+}
+
+button{
+    color: red;
+    border: none;
+    background: none;
+    font-size: x-small;
+}
+
+p section{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px grey dotted;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: smaller;
+    color: rgb(27, 27, 27);
+    font-weight: lighter;
+    background-color: rgb(245, 255, 208);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#to-do-list{
+    padding: 10px;
+    border: 1px black dotted;
+    margin-top: 10px ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

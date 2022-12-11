@@ -32,10 +32,10 @@ window.onload = function(){
 
     function init() {
         console.log("Function init was called");
-        if (sessionStorage.cart) {
-            cartItems = JSON.parse(sessionStorage.getItem('cart')).items;      
+        if (localStorage.cart) {
+            cartItems = JSON.parse(localStorage.getItem('cart')).items;      
         } else {
-            sessionStorage.setItem('cart', JSON.stringify({items: [] }))
+            localStorage.setItem('cart', JSON.stringify({items: [] }))
         }
         updateCartIndicator();
     }
@@ -67,9 +67,7 @@ window.onload = function(){
              '<div class = "paraBtn"><button data-item-id="' + 
               data[i].id +
              '" class="btn btn-primary add-to-cart" role="button">ADD TO <i class="fa-solid fa-cart-shopping"></button>';
-             item += 
-             '<a href = "cart.html" class="hrefGoto"><button class="btn btn-success" role="button">Go to <i class="fa-solid fa-cart-shopping"></button></a></div>';
-             //item += '</div></div></div>';
+        //item += '</div></div></div>';
         }
         itemList.innerHTML = item;
     }
@@ -82,10 +80,10 @@ window.onload = function(){
                 const id = event.target.dataset.itemId;
                 console.log('id = ' + id);
                 const button = this;
-                button.innerHTML = 'Loading...';
+                button.innerHTML = 'adding. . .';
                 button.setAttribute('disabled', true);
                 setTimeout(function() {
-                    button.innerHTML = 'Add to Cart';
+                    button.innerHTML = 'Add to <i class="fa-solid fa-cart-shopping">';
                     button.removeAttribute('disabled');
                     addItem(id);
                     updateCartIndicator();
@@ -107,7 +105,7 @@ window.onload = function(){
         }else{
             cartItems.push({ item: itemObj, amount: 1});
         }
-        sessionStorage.setItem('cart', JSON.stringify({items: cartItems}));
+        localStorage.setItem('cart', JSON.stringify({items: cartItems}));
     }
     //9. Now we create our updateCartIndicator( )
 

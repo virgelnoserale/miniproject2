@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@400;600&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/review1.css">
 </head>
 <body>
     <div class="container-fluid sticky-top footer-navbar-bg">
@@ -42,6 +43,13 @@
     </div>
       <!--end logo and nav-->
       <!-- start products -->
+      <div class="container" id="container-cart">
+        <div class="row">
+         <div class="col-md-12">
+        <!--  <a class="navbar-brand" href="products.html">Shopping Time</a>  -->
+         <p class="paraBtn"><a href="cart.html" class=" href-cart"><i class="fa-solid fa-cart-shopping">&nbsp</i><sup><span id="cart-items-num">0</span></sup></a></p> 
+         </div>
+     </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6" id="items-list"></div>
@@ -74,15 +82,23 @@
             </div>
         </div>
     </div>
-        <!--        <div class="container" id="container-href">
-                       <div class="row">
-                        <div class="col-md-6">
-                         <a class="navbar-brand" href="products.html">Shopping Time</a> 
-                        <p class="paraBtn"><a href="cart.html" class=" href-cart">Go to<i class="fa-solid fa-cart-shopping"></i><span id="cart-items-num"> 0</span></a> 
-                        </p> 
-                        </div>
-                    </div>
-                </div> -->
+    <div class="container">
+        <div class="row">
+        <p class="content-product-reviews-title">Customer product reviews</p>
+        <div class="container">
+          <form id="form">
+    <!--       <input class="input-review" type="text" id="input-full-name" placeholder="Ypur name" required>  --> 
+            <input class="input-review" type="text" id="input-name" placeholder="Type your name - & your product review here. . ." required>
+            <button class="class-btn-add" type="submit" id="btn-add">post</button>
+          </form>
+        </div>
+    </div>
+    <div class="row">
+        <ol id="review"></ol>
+    </div>
+    </div>
+      </div>
+    <!--footer-->
         <br>
         <div class="container-fluid footer-navbar-bg">
             <div class="container">
@@ -109,6 +125,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/review3.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

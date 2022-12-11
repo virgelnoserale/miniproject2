@@ -9,8 +9,8 @@ window.onload = function(){
 
     function init(){
         //cartItems = JSON.parse(sessionStorage.getItem('cart')).items || [];
-        if (JSON.parse(sessionStorage.getItem('cart')).items.length > 0) {
-            cartItems = JSON.parse(sessionStorage.getItem('cart')).items;
+        if (JSON.parse(localStorage.getItem('cart')).items.length > 0) {
+            cartItems = JSON.parse(localStorage.getItem('cart')).items;
         } else {
             cartItems = [];
         }
@@ -68,7 +68,7 @@ function removeItem(id) {
     for (var i = 0; i < cartItems.length; i++) {
         if (cartItems[i].item.id === id) {
             cartItems.splice(i, 1);    //remove item from array
-            sessionStorage.setItem(
+            localStorage.setItem(
                 'cart',
                 JSON.stringify({items: cartItems})
 

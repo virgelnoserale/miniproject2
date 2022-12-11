@@ -15,7 +15,6 @@ td{
     border-bottom: 1px rgb(159, 216, 213) dotted;
 }
 
-
 .panel-heading{
     text-align: right;
     color: black;
@@ -26,6 +25,11 @@ td{
 }
 
 #container-products-details{
+}
+
+#container-products-details h6{
+    color: black;
+    font-weight: bold;
 }
 
 #container-products-details table{
