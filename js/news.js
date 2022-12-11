@@ -11,7 +11,7 @@ var newsDataArr = [];
 
 // apis 
 const API_KEY = "b302ca2135c146fbab12a2fe932ccc42";
-const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=10&offset=20";
+const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=12";
 const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
 
 window.onload = function() {
@@ -76,20 +76,22 @@ function displayNews() {
         var date = news.publish_date.split("T");
         
         var col = document.createElement('div');
-        col.className="col-sm-12 col-md-3 col-lg-3 p-2 card m-3";
+        col.className="col-sm-10 col-md-6 col-lg-3 p-1 card m-1 card-styles";
 
         var card = document.createElement('div');
-        card.className = "p-2";
+        card.className ="p-1 justify-content-between";
 
         var image = document.createElement('img');
-        image.setAttribute("height","matchparent");
-        image.setAttribute("width","100%");
+        // image.setAttribute("height","matchparent");
+        // image.setAttribute("width","100%");
+        // image.setAttribute("height", "200px");
+        image.className="rounded img-fluid img-height";
         image.src=news.image;
 
         var cardBody = document.createElement('div');
         
         var newsHeading = document.createElement('h5');
-        newsHeading.className = "card-title";
+        newsHeading.className = "card-title title-height";
         newsHeading.innerHTML = news.title;
 
         var dateHeading = document.createElement('h6');
@@ -97,8 +99,8 @@ function displayNews() {
         dateHeading.innerHTML = date[0];
 
         var discription = document.createElement('p');
-        discription.className="text-muted";
-        discription.innerHTML = news.summary;
+        discription.className="cutoff-text";
+        discription.innerHTML = news.text;
 
         var link = document.createElement('a');
         link.className="btn btn-dark";
