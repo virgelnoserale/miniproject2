@@ -255,25 +255,82 @@
         
         </main> -->
 
+        <!-- breadcrumbs -->
         <div class="container">
-            <div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#health" id="health"></a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control" type="text" id="newsQuery" placeholder="Search news">
-                    <button class="btn btn-outline-info" type="button" id="searchBtn">Search</button>
-                </form>
-            </div>
-    
-            <!-- News  -->
-            <div>
-                <div class="row m-1" id="newsType"></div>
-                <div class="row justify-content-around" id="newsdetails"></div>
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active display-6 fw-semibold" aria-current="page">Top Headlines</li>
+                    </ol>
+                </nav>
             </div>
         </div>
+
+
+        <!-- generated content from api -->
+        <div class="container">
+                <!-- <div class="row m-1" id="newsType"></div> -->
+                <div class="row justify-content-between mx-0 my-3" id="newsdetails"></div>
+                <!-- <div class="card" aria-hidden="true">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                      </h5>
+                      <p class="card-text placeholder-glow">
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                        <span class="placeholder col-8"></span>
+                      </p>
+                      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                    </div>
+                </div> -->
+        </div>
+
+        
+
+        <!-- pagination -->
+        <div class="container">
+            <div class="row">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="./news2.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="./news3.html">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="./news2.html">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+
+        <!-- static content -->
+          <!-- Information Section 1-->
+        <div class="container">
+            <div class="row justify-content-center shadow m-0 static-content py-2 mb-3 align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="container">
+                        <img class="img-fluid" src="./img/landing/medicines.svg" alt="section 1">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="container">
+                        <h2>Best Herbal Medicine</h2>
+                        <p>Herbal medicine has its origins in ancient cultures. It involves the medicinal use of plants to treat disease and enhance general health and wellbeing. Our product are hand picked by professionals, proven and tested by people who have been cured with our herbal medicine.</p>
+                        <a href="./homemed.html"><button class="button-79" role="button">See Products</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
 
 
         <!-- footer -->

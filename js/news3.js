@@ -1,29 +1,14 @@
-// Production Script Run Starts here
-// variables
-const healthBtn = document.getElementById("health");
-const searchBtn = document.getElementById("searchBtn");
-const newsQuery = document.getElementById("newsQuery");
-const newsType = document.getElementById("newsType");
 const newsdetails = document.getElementById("newsdetails");
 
 // Array
 var newsDataArr = [];
 
-// apis 
-// const API_KEY = "b302ca2135c146fbab12a2fe932ccc42";
-const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=12";
-// const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
+const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=20&offset=32";
 
 window.onload = function() {
     // newsType.innerHTML="<h4>Top Health News</h4>";
     fetchHeadlines();
 };
-
-
-// searchBtn.addEventListener("click",function(){
-//     newsType.innerHTML="<h4>Search : "+newsQuery.value+"</h4>";
-//     fetchQueryNews();
-// });
 
 const fetchHeadlines = async () => {
     const response = await fetch(HEALTH_NEWS);
@@ -33,26 +18,6 @@ const fetchHeadlines = async () => {
         newsDataArr = myJson.news;
     } else {
         // handle errors and some debugging
-        console.log(response.status, response.statusText);
-        newsdetails.innerHTML = "<h5>No data found.</h5>"
-        return;
-    }
-
-    displayNews();
-}
-
-const fetchQueryNews = async () => {
-
-    if(newsQuery.value == null)
-        return;
-
-    const response = await fetch(SEARCH_NEWS+encodeURIComponent(newsQuery.value)+"&apiKey="+API_KEY);
-    newsDataArr = [];
-    if(response.status >= 200 && response.status < 300) {
-        const myJson = await response.json();
-        newsDataArr = myJson.articles;
-    } else {
-        //error handle
         console.log(response.status, response.statusText);
         newsdetails.innerHTML = "<h5>No data found.</h5>"
         return;
@@ -121,4 +86,3 @@ function displayNews() {
         newsdetails.appendChild(col);
     });
 }
-

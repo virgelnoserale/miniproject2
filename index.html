@@ -67,8 +67,8 @@
           <div class="container">
               <h1 class="hero-content display-1 fw-bolder">Find the Best Herbal Medicine that's Best for You</h1>
               <h4 class="display-6 ">We Offer All Natural Herbal Medicine.</h4>
-              <a href="./homemed.html"><button class="button-79" role="button">Buy Products</button></a>
-              <a href="./news.html"><button type="button" class="btn hero-btn">Latest News</button></a>
+              <a href="./homemed.html"><button class="btn btn-success btn-lg" role="button">Buy Products</button></a>
+              <a href="./news.html"><button type="button" class="btn hero-btn btn-lg">Latest News</button></a>
           </div>
       </div>
   </div>
@@ -101,7 +101,7 @@
 
   <!-- Information Section 1-->
   <div class="container hidden">
-      <div class="row info-section align-items-center">
+      <div class="row align-items-center align-self-center my-5">
           <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="container">
                   <img class="respo-img" src="./img/landing/medicines.svg" alt="section 1">
@@ -111,7 +111,7 @@
               <div class="container">
                   <h2>Best Herbal Medicine</h2>
                   <p>Herbal medicine has its origins in ancient cultures. It involves the medicinal use of plants to treat disease and enhance general health and wellbeing. Our product are hand picked by professionals, proven and tested by people who have been cured with our herbal medicine.</p>
-                  <a href="./homemed.html"><button class="button-79" role="button">See Products</button>
+                  <a href="./homemed.html"><button class="btn btn-success btn-lg" role="button">See Products</button>
                   </a>
               </div>
           </div>
@@ -120,12 +120,12 @@
 
   <!-- Information Section 2 -->
   <div class="container hidden">
-      <div class="row info-section align-items-center">
+      <div class="row align-items-center my-5">
           <div class="col-lg-6 col-md-6 col-sm-12 order-lg-first order-md-first">
               <div class="container">
                   <h2>Latest Health News</h2>
                   <p>Get the latest news about health but with a more personalized experience that will be based on your health concerns and serve best at your interest.</p>
-                  <a href="./news.html"><button class="button-79" role="button" href>Latest News</button></a>
+                  <a href="./news.html"><button class="btn btn-success btn-lg" role="button" href>Latest News</button></a>
               </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 order-first">
@@ -154,7 +154,7 @@
       </div>
   </div> -->
 
-  <div class="containter-fluid">
+  <div class="containter-fluid footer-navbar-bg">
     <div class="container">
       <!-- New Testimonial Start -->
       <!--====== TESTIMONIAL ONE PART START ======-->
@@ -367,6 +367,37 @@
         </div>
 
         <div class="row text-center">
+          <script>function display_time() {
+            var x = new Date()
+            var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+            hours = x.getHours( ) % 12;
+            hours = hours ? hours : 12;
+            hours=hours.toString().length==1? 0+hours.toString() : hours;
+            
+            var minutes=x.getMinutes().toString()
+            minutes=minutes.length==1 ? 0+minutes : minutes;
+            
+            var seconds=x.getSeconds().toString()
+            seconds=seconds.length==1 ? 0+seconds : seconds;
+            
+            var month=(x.getMonth() +1).toString();
+            month=month.length==1 ? 0+month : month;
+            
+            var dt=x.getDate().toString();
+            dt=dt.length==1 ? 0+dt : dt;
+            
+            var x1=month + "/" + dt + "/" + x.getFullYear(); 
+            x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+            document.getElementById('date').innerHTML = x1;
+            display_mytime();
+             }
+             function display_mytime(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_time()',refresh)
+            }
+            display_mytime()
+            </script>
+            <span id='date'></span>
             <p>VJ Herbal © 2022. All rights reserved.</p>
         </div>
       </div>
