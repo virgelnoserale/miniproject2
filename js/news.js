@@ -9,9 +9,8 @@ const newsdetails = document.getElementById("newsdetails");
 // Array
 var newsDataArr = [];
 
-// apis 
-// const API_KEY = "b302ca2135c146fbab12a2fe932ccc42";
-const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=12";
+// api
+// const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=12";
 // const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
 
 window.onload = function() {
@@ -87,6 +86,9 @@ function displayNews() {
         // image.setAttribute("height", "200px");
         image.className="rounded img-fluid img-height";
         image.src=news.image;
+
+        //test this up
+        image.setAttribute(onerror="this.onerror=null;this.src='./img/logo.png';");
 
         var cardBody = document.createElement('div');
         
