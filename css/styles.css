@@ -4,7 +4,7 @@ body {
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Montserrat Alternates', sans-serif; */
     font-family: 'Roboto Slab', serif;
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
 }
 a {
     text-decoration: none;
@@ -14,6 +14,10 @@ a {
     text-decoration: none;
     font-size: 24px;
     color: #232323;
+}
+
+p {
+ font-size: 24px;
 }
 
 .testimonial-background {
@@ -35,7 +39,7 @@ a {
 }
 
 .footer-navbar-bg {
-    background-color: #dee2e6;
+    background-color: #f8f9fa;
 }
 
 .respo-img {

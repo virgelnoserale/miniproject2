@@ -239,3 +239,8 @@
   color: var(--dark-3);
 }
 /* Testimonial End */
+
+.static-content {
+  background: #f8f9fa;
+  border-radius: 16px;
+}
