@@ -1,9 +1,5 @@
 // Production Script Run Starts here
 // variables
-const healthBtn = document.getElementById("health");
-const searchBtn = document.getElementById("searchBtn");
-const newsQuery = document.getElementById("newsQuery");
-const newsType = document.getElementById("newsType");
 const newsdetails = document.getElementById("newsdetails");
 
 // Array
@@ -11,18 +7,13 @@ var newsDataArr = [];
 
 // api
 // const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=12";
-// const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
+
+//second account in API
+const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=81ddac3084094da1a9597ce609d3fae5&source-countries=ph&text=health-headlines&number=12&offset=12";
 
 window.onload = function() {
-    // newsType.innerHTML="<h4>Top Health News</h4>";
     fetchHeadlines();
 };
-
-
-// searchBtn.addEventListener("click",function(){
-//     newsType.innerHTML="<h4>Search : "+newsQuery.value+"</h4>";
-//     fetchQueryNews();
-// });
 
 const fetchHeadlines = async () => {
     const response = await fetch(HEALTH_NEWS);
@@ -33,27 +24,15 @@ const fetchHeadlines = async () => {
     } else {
         // handle errors and some debugging
         console.log(response.status, response.statusText);
-        newsdetails.innerHTML = "<h5>No data found.</h5>"
-        return;
-    }
-
-    displayNews();
-}
-
-const fetchQueryNews = async () => {
-
-    if(newsQuery.value == null)
-        return;
-
-    const response = await fetch(SEARCH_NEWS+encodeURIComponent(newsQuery.value)+"&apiKey="+API_KEY);
-    newsDataArr = [];
-    if(response.status >= 200 && response.status < 300) {
-        const myJson = await response.json();
-        newsDataArr = myJson.articles;
-    } else {
-        //error handle
-        console.log(response.status, response.statusText);
-        newsdetails.innerHTML = "<h5>No data found.</h5>"
+        newsdetails.innerHTML = 
+        `<div class="container">
+            <div class="row my-5 justify-content-center">
+                <div class="col-7 text-center">
+                    <h3 class="display-5">Oopss, no data available</h3>
+                    <img class="img-fluid" src="./img/404.png">
+                </div>
+            </div>
+        </div>`
         return;
     }
 
@@ -65,20 +44,15 @@ function displayNews() {
 
     newsdetails.innerHTML = "";
 
-    // if(newsDataArr.length == 0) {
-    //     newsdetails.innerHTML = "<h5>No data found.</h5>"
-    //     return;
-    // }
-
     newsDataArr.forEach(news => {
 
         var date = news.publish_date.split("T");
         
         var col = document.createElement('div');
-        col.className="col-sm-10 col-md-6 col-lg-3 my-2 card card-styles shadow";
+        col.className="col-sm-10 col-md-6 col-lg-3 my-3 card card-styles shadow";
 
         var card = document.createElement('div');
-        card.className ="p-1 justify-content-center";
+        card.className ="p-1 my-1 justify-content-center";
 
         var image = document.createElement('img');
         // image.setAttribute("height","matchparent");
@@ -88,12 +62,12 @@ function displayNews() {
         image.src=news.image;
 
         //test this up
-        image.setAttribute(onerror="this.onerror=null;this.src='./img/logo.png';");
+        image.setAttribute("onerror", "'this.onerror=null';this.src='./img/no-img.png';");
 
         var cardBody = document.createElement('div');
         
         var newsHeading = document.createElement('h5');
-        newsHeading.className = "card-title title-height";
+        newsHeading.className = "card-title title-height line-clamp fs-4 fw-semibold";
         newsHeading.innerHTML = news.title;
 
         var dateHeading = document.createElement('h6');
@@ -101,7 +75,7 @@ function displayNews() {
         dateHeading.innerHTML = date[0];
 
         var discription = document.createElement('p');
-        discription.className="cutoff-text";
+        discription.className="cutoff-text fs-5";
         discription.innerHTML = news.text;
 
         var link = document.createElement('a');
