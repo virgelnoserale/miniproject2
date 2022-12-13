@@ -5,6 +5,9 @@ var newsDataArr = [];
 
 // const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=12&offset=24";
 
+//second account in API
+const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=81ddac3084094da1a9597ce609d3fae5&source-countries=ph&text=health-headlines&number=12&offset=24";
+
 window.onload = function() {
     fetchHeadlines();
 };
