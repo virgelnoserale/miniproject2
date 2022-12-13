@@ -3,10 +3,14 @@ const newsdetails = document.getElementById("newsdetails");
 // Array
 var newsDataArr = [];
 
-// const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=20&offset=12";
+// const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=e0c2c2a4786c40f699a521f2e859a7ec&source-countries=ph&text=health-headlines&number=12&offset=12";
+
+//second account in API
+const HEALTH_NEWS = " https://api.worldnewsapi.com/search-news?api-key=81ddac3084094da1a9597ce609d3fae5&source-countries=ph&text=health-headlines&number=12&offset=12";
+
+
 
 window.onload = function() {
-    // newsType.innerHTML="<h4>Top Health News</h4>";
     fetchHeadlines();
 };
 
@@ -19,7 +23,15 @@ const fetchHeadlines = async () => {
     } else {
         // handle errors and some debugging
         console.log(response.status, response.statusText);
-        newsdetails.innerHTML = "<h5>No data found.</h5>"
+        newsdetails.innerHTML = 
+        `<div class="container">
+            <div class="row my-5 justify-content-center">
+                <div class="col-7 text-center">
+                    <h3 class="display-5">Oopss, no data available</h3>
+                    <img class="img-fluid" src="./img/404.png">
+                </div>
+            </div>
+        </div>`;
         return;
     }
 
@@ -31,20 +43,15 @@ function displayNews() {
 
     newsdetails.innerHTML = "";
 
-    // if(newsDataArr.length == 0) {
-    //     newsdetails.innerHTML = "<h5>No data found.</h5>"
-    //     return;
-    // }
-
     newsDataArr.forEach(news => {
 
         var date = news.publish_date.split("T");
         
         var col = document.createElement('div');
-        col.className="col-sm-10 col-md-6 col-lg-3 my-2 card card-styles shadow";
+        col.className="col-sm-10 col-md-6 col-lg-3 my-3 card card-styles shadow";
 
         var card = document.createElement('div');
-        card.className ="p-1 justify-content-center";
+        card.className ="p-1 my-1 justify-content-center";
 
         var image = document.createElement('img');
         // image.setAttribute("height","matchparent");
@@ -52,11 +59,12 @@ function displayNews() {
         // image.setAttribute("height", "200px");
         image.className="rounded img-fluid img-height";
         image.src=news.image;
+        image.setAttribute("onerror", "'this.onerror=null';this.src='./img/no-img.png';");
 
         var cardBody = document.createElement('div');
         
         var newsHeading = document.createElement('h5');
-        newsHeading.className = "card-title title-height";
+        newsHeading.className = "card-title title-height line-clamp fs-4 fw-semibold";
         newsHeading.innerHTML = news.title;
 
         var dateHeading = document.createElement('h6');
@@ -64,7 +72,7 @@ function displayNews() {
         dateHeading.innerHTML = date[0];
 
         var discription = document.createElement('p');
-        discription.className="cutoff-text";
+        discription.className="cutoff-text fs-5";
         discription.innerHTML = news.text;
 
         var link = document.createElement('a');
