@@ -1,4 +1,4 @@
-# Project Name
+# VJ Herbal
 > This is a Herbal Seller's Website that also provides the latest news about health.
 > Live demo on [Netlify](https://vjherbal.netlify.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 > Live demo on [GitHub Pages](https://virgelnoserale.github.io/miniproject2/). <!-- If you have the project hosted somewhere, include the link here. -->
