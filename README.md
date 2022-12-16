@@ -40,13 +40,13 @@ List the ready features here:
 
 
 ## Screenshots
-###Landing Page
+##Landing Page------------
 ![Example screenshot](./img/vjherbal-home.png)
-###News Page
+##News Page------------
 ![Example screenshot](./img/vjherbal-news.png)
-###Products Page
+##Products Page------------
 ![Example screenshot](./img/vjherbal-products.png)
-###About Page
+##About Page------------
 ![Example screenshot](./img/vjherbal-about.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
