@@ -33,7 +33,6 @@
 
 
 ## Features
-List the ready features here:
 - Provides the latest health news about health in the Philippines
 - Has a complete user purchase flow of the available product
 - Provides a brief description of the business.
@@ -79,7 +78,6 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
 - This project was inspired by Mr. Virgel Noserale's Project One, which is a hospital website
 - Many thanks to our Bootcamp Instructor Mr. Erwin Macaraig, the KodeGo team - Ms. Jhem, Mr. Gene, and Mr. Johnroe - our panelist for the presentation. Thanks to my partner, Mr. Virgel Noserale and to my fellow Kodemates.
 
