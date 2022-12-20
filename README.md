@@ -44,7 +44,7 @@
 ### News Page------------------------
 ![Example screenshot](./img/readme-news.png)
 ### Products Page------------------------
-![Example screenshot](./img/readme-products.png)
+![Example screenshot](./img/readme-product.png)
 ### About Page------------------------
 ![Example screenshot](./img/readme-about.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
