@@ -19,8 +19,8 @@
 
 
 ## General Information
-- The primary goal of this project is to utilize our acquired skills in HTML, CSS and JavaScript so far in the KodeGo Bootcamp.
-- The business application of the website is for a small business to sell their product online.
+- The primary goal of this project is to utilize our acquired skills in HTML, CSS, and JavaScript so far in the KodeGo Bootcamp.
+- The business application of the website is for a small business to sell its product online.
 - This is a by-pair project requirement of the KodeGo Bootcamp for project two
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
@@ -40,38 +40,38 @@
 
 ## Screenshots
 ### Landing Page------------------------
-![Example screenshot](./img/vjherbal-home.png)
+![Example screenshot](./img/readme-home.png)
 ### News Page------------------------
-![Example screenshot](./img/vjherbal-news.png)
+![Example screenshot](./img/readme-news.png)
 ### Products Page------------------------
-![Example screenshot](./img/vjherbal-products.png)
+![Example screenshot](./img/readme-products.png)
 ### About Page------------------------
-![Example screenshot](./img/vjherbal-about.png)
+![Example screenshot](./img/readme-about.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
 The scope of this project is to be an API-driven Mini Web Application using Bootstrap, GitHub, JavaScript/JQuery, APIs, and Heroku/Netlify.
 
-Just simply click the provided link for the demo of this website and feel free to explore and send us a feedback via the email provided at the end of this file.
+Just simply click the provided link for the demo of this website and feel free to explore and send a feedback via the contact information provided at the end of this file.
 
 
 ## Usage
-This website can be used for a small business that is looking to be set up online and have the capability to sell their products online.
+This website can be used for a small business that is looking to be set up online and have the capability to sell its products online.
 
 <!-- `write-your-code-here` -->
 
 
 ## Project Status
-Project is: _completed_. As the duration of this was from November 13 to December 12, 2022.
+The project is _completed_. The duration of this was from November 13 to December 12, 2022.
 
 
 ## Room for Improvement
-We can further imporve the UI of the website especially on the news page. We can also further implement backend via firebase for the customers filled orders.
+We can further improve the UI of the website, especially on the news page. We can also further implement the backend via firebase for the customers filled orders.
 
 Room for improvement:
 - UI of the News Page
-- More relevant contents
+- More relevant content
 
 To do:
 - Add features for purchase flow
@@ -79,7 +79,7 @@ To do:
 
 ## Acknowledgements
 - This project was inspired by Mr. Virgel Noserale's Project One, which is a hospital website
-- Many thanks to our Bootcamp Instructor Mr. Erwin Macaraig, the KodeGo team - Ms. Jhem, Mr. Gene, and Mr. Johnroe - our panelist for the presentation. Thanks to my partner, Mr. Virgel Noserale and to my fellow Kodemates.
+- Many thanks to our Bootcamp Instructor Mr. Erwin Macaraig, and the KodeGo team - Ms. Jhem, Mr. Gene, and Mr. Johnroe - our panelists for the presentation. Thanks to my partner, Mr. Virgel Noserale, and to my fellow Kodemates.
 
 
 ## Contact
